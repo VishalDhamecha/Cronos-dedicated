@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".mdui.asalesorderheaderpartner.ASalesOrderHeaderPartnerActivity">
+    <data>
+        <import type = "com.sap.cloud.android.odata.api_sales_order_srv_entities.ASalesOrderHeaderPartnerType" />
+        <variable name="aSalesOrderHeaderPartnerType" type="ASalesOrderHeaderPartnerType"/>
+        <variable name="handler" type="com.company.mysapcpsdkprojectoffline.mdui.asalesorderheaderpartner.ASalesOrderHeaderPartnerDetailFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="SalesOrder"
+            app:valueText="@{aSalesOrderHeaderPartnerType.getOptionalValue(ASalesOrderHeaderPartnerType.salesOrder).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PartnerFunction"
+            app:valueText="@{aSalesOrderHeaderPartnerType.getOptionalValue(ASalesOrderHeaderPartnerType.partnerFunction).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="Customer"
+            app:valueText="@{aSalesOrderHeaderPartnerType.getOptionalValue(ASalesOrderHeaderPartnerType.customer).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="Supplier"
+            app:valueText="@{aSalesOrderHeaderPartnerType.getOptionalValue(ASalesOrderHeaderPartnerType.supplier).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="Personnel"
+            app:valueText="@{aSalesOrderHeaderPartnerType.getOptionalValue(ASalesOrderHeaderPartnerType.personnel).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ContactPerson"
+            app:valueText="@{aSalesOrderHeaderPartnerType.getOptionalValue(ASalesOrderHeaderPartnerType.contactPerson).toString()}" />
+
+        <RelativeLayout
+            style="@style/FioriButton.Flat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:onClick="@{handler::onNavigationClickedToASalesOrder_to_SalesOrder}"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/link_label_to_to_salesorder"
+                style="@style/FioriButton.Flat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:focusable="false"
+                android:paddingLeft="16dp"
+                android:text="ASalesOrder" />
+
+            <Button
+                android:id="@+id/link_button_to_to_salesorder"
+                style="@style/FioriButton.Flat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:drawableStart="@drawable/ic_arrow_forward_black_24dp"
+                android:enabled="true"
+                android:visibility="invisible"
+                android:focusable="false" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

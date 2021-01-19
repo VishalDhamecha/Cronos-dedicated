@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".mdui.aslsordpaymentplanitemdetails.ASlsOrdPaymentPlanItemDetailsActivity">
+    <data>
+        <import type = "com.sap.cloud.android.odata.api_sales_order_srv_entities.ASlsOrdPaymentPlanItemDetailsType" />
+        <variable name="aSlsOrdPaymentPlanItemDetailsType" type="ASlsOrdPaymentPlanItemDetailsType"/>
+        <variable name="handler" type="com.company.mysapcpsdkprojectoffline.mdui.aslsordpaymentplanitemdetails.ASlsOrdPaymentPlanItemDetailsDetailFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/item_detail_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="SalesOrder"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.salesOrder).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="PaymentPlanItem"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.paymentPlanItem).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="PaymentPlan"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.paymentPlan).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="ElectronicPaymentType"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.electronicPaymentType).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="ElectronicPayment"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.electronicPayment).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="EPaytValidityStartDate"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.ePaytValidityStartDate).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="EPaytValidityEndDate"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.ePaytValidityEndDate).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="ElectronicPaymentHolderName"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.electronicPaymentHolderName).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="AuthorizedAmountInAuthznCrcy"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.authorizedAmountInAuthznCrcy).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="AuthorizationCurrency"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.authorizationCurrency).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="AuthorizationByDigitalPaytSrvc"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.authorizationByDigitalPaytSrvc).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="AuthorizationByAcquirer"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.authorizationByAcquirer).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="AuthorizationDate"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.authorizationDate).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="AuthorizationTime"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.authorizationTime).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="AuthorizationStatusName"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.authorizationStatusName).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="EPaytByDigitalPaymentSrvc"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.ePaytByDigitalPaymentSrvc).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="ElectronicPaymentCallStatus"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.electronicPaymentCallStatus).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="EPaytAuthorizationResult"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.ePaytAuthorizationResult).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="EPaytToBeAuthorizedAmount"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.ePaytToBeAuthorizedAmount).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="EPaytAuthorizationIsExpired"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.ePaytAuthorizationIsExpired).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="EPaytAmountIsChanged"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.ePaytAmountIsChanged).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="PreauthorizationIsRequested"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.preauthorizationIsRequested).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="PaymentServiceProvider"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.paymentServiceProvider).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="PaymentByPaymentServicePrvdr"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.paymentByPaymentServicePrvdr).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="TransactionByPaytSrvcPrvdr"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.transactionByPaytSrvcPrvdr).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="MerchantByClearingHouse"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.merchantByClearingHouse).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="MaximumToBeAuthorizedAmount"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.maximumToBeAuthorizedAmount).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="PaytPlnForAuthorizationItem"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.paytPlnForAuthorizationItem).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="PaytPlnItmForAuthorizationItem"
+                        app:valueText="@{aSlsOrdPaymentPlanItemDetailsType.getOptionalValue(ASlsOrdPaymentPlanItemDetailsType.paytPlnItmForAuthorizationItem).toString()}" />
+
+                    <RelativeLayout
+                        style="@style/FioriButton.Flat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:onClick="@{handler::onNavigationClickedToASalesOrder_to_SalesOrder}"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/link_label_to_to_salesorder"
+                            style="@style/FioriButton.Flat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:paddingLeft="16dp"
+                            android:text="ASalesOrder" />
+
+                        <Button
+                            android:id="@+id/link_button_to_to_salesorder"
+                            style="@style/FioriButton.Flat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:clickable="false"
+                            android:drawableStart="@drawable/ic_arrow_forward_black_24dp"
+                            android:enabled="true"
+                            android:visibility="invisible"
+                            android:focusable="false" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".mdui.asalesorderscheduleline.ASalesOrderScheduleLineActivity">
+    <data>
+        <import type = "com.sap.cloud.android.odata.api_sales_order_srv_entities.ASalesOrderScheduleLineType" />
+        <variable name="aSalesOrderScheduleLineType" type="ASalesOrderScheduleLineType"/>
+        <variable name="handler" type="com.company.mysapcpsdkprojectoffline.mdui.asalesorderscheduleline.ASalesOrderScheduleLineDetailFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="SalesOrder"
+            app:valueText="@{aSalesOrderScheduleLineType.getOptionalValue(ASalesOrderScheduleLineType.salesOrder).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="SalesOrderItem"
+            app:valueText="@{aSalesOrderScheduleLineType.getOptionalValue(ASalesOrderScheduleLineType.salesOrderItem).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ScheduleLine"
+            app:valueText="@{aSalesOrderScheduleLineType.getOptionalValue(ASalesOrderScheduleLineType.scheduleLine).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="RequestedDeliveryDate"
+            app:valueText="@{aSalesOrderScheduleLineType.getOptionalValue(ASalesOrderScheduleLineType.requestedDeliveryDate).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConfirmedDeliveryDate"
+            app:valueText="@{aSalesOrderScheduleLineType.getOptionalValue(ASalesOrderScheduleLineType.confirmedDeliveryDate).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="OrderQuantityUnit"
+            app:valueText="@{aSalesOrderScheduleLineType.getOptionalValue(ASalesOrderScheduleLineType.orderQuantityUnit).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ScheduleLineOrderQuantity"
+            app:valueText="@{aSalesOrderScheduleLineType.getOptionalValue(ASalesOrderScheduleLineType.scheduleLineOrderQuantity).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConfdOrderQtyByMatlAvailCheck"
+            app:valueText="@{aSalesOrderScheduleLineType.getOptionalValue(ASalesOrderScheduleLineType.confdOrderQtyByMatlAvailCheck).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="DeliveredQtyInOrderQtyUnit"
+            app:valueText="@{aSalesOrderScheduleLineType.getOptionalValue(ASalesOrderScheduleLineType.deliveredQtyInOrderQtyUnit).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="OpenConfdDelivQtyInOrdQtyUnit"
+            app:valueText="@{aSalesOrderScheduleLineType.getOptionalValue(ASalesOrderScheduleLineType.openConfdDelivQtyInOrdQtyUnit).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="CorrectedQtyInOrderQtyUnit"
+            app:valueText="@{aSalesOrderScheduleLineType.getOptionalValue(ASalesOrderScheduleLineType.correctedQtyInOrderQtyUnit).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="DelivBlockReasonForSchedLine"
+            app:valueText="@{aSalesOrderScheduleLineType.getOptionalValue(ASalesOrderScheduleLineType.delivBlockReasonForSchedLine).toString()}" />
+
+    </LinearLayout>
+</layout>

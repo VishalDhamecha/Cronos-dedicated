@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/mainRL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/divider"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPagerMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height=".01dp"
+        android:layout_above="@+id/navViewLL" />
+
+    <LinearLayout
+        android:id="@+id/navViewLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/homeLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:background="@color/navigation_selected_color"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/_5sdp"
+            android:paddingTop="@dimen/_3sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/menuHomeIV"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                app:srcCompat="@drawable/ic_house" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/menuHomeTV"
+                style="@style/Font10Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/home" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/customerLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/_5sdp"
+            android:paddingTop="@dimen/_3sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/menuCustomerIV"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+
+                android:src="@drawable/ic_gear" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/menuCustomerTV"
+                style="@style/Font10Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/products" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/salesOrderLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_3sdp">
+
+            <FrameLayout
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_2sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/menuSalesOrderIV"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_bank" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/badge_text_view"
+                    android:layout_width="@dimen/_12sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:layout_gravity="end|top"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_6ssp"
+                    android:visibility="gone"
+                    tools:text="185" />
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/menuSalesOrderTV"
+                style="@style/Font10Regular"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sales" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/notificationLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_3sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/menuNotificationIV"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:src="@drawable/ic_bell" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/menuNotificationTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notification"
+                style="@style/Font10Regular"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profileLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_3sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/menuProfileIV"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:src="@drawable/ic_user" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/menuProfileTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile"
+                style="@style/Font10Regular" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

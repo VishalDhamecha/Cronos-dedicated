@@ -1,0 +1,86 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="application_name">Precursors Group</string>
+    <string name="eset_asalesorder">ASalesOrder</string>
+    <string name="eset_asalesorder_single">ASalesOrderType</string>
+    <string name="eset_asalesorderheaderpartner">ASalesOrderHeaderPartner</string>
+    <string name="eset_asalesorderheaderpartner_single">ASalesOrderHeaderPartnerType</string>
+    <string name="eset_asalesorderheaderprelement">ASalesOrderHeaderPrElement</string>
+    <string name="eset_asalesorderheaderprelement_single">ASalesOrderHeaderPrElementType</string>
+    <string name="eset_asalesorderitem">ASalesOrderItem</string>
+    <string name="eset_asalesorderitem_single">ASalesOrderItemType</string>
+    <string name="eset_asalesorderitempartner">ASalesOrderItemPartner</string>
+    <string name="eset_asalesorderitempartner_single">ASalesOrderItemPartnerType</string>
+    <string name="eset_asalesorderitemprelement">ASalesOrderItemPrElement</string>
+    <string name="eset_asalesorderitemprelement_single">ASalesOrderItemPrElementType</string>
+    <string name="eset_asalesorderitemtext">ASalesOrderItemText</string>
+    <string name="eset_asalesorderitemtext_single">ASalesOrderItemTextType</string>
+    <string name="eset_asalesorderscheduleline">ASalesOrderScheduleLine</string>
+    <string name="eset_asalesorderscheduleline_single">ASalesOrderScheduleLineType</string>
+    <string name="eset_asalesordertext">ASalesOrderText</string>
+    <string name="eset_asalesordertext_single">ASalesOrderTextType</string>
+    <string name="eset_aslsordpaymentplanitemdetails">ASlsOrdPaymentPlanItemDetails</string>
+    <string name="eset_aslsordpaymentplanitemdetails_single">ASlsOrdPaymentPlanItemDetailsType</string>
+
+    <string name="home">Home</string>
+    <string name="customer">Customer</string>
+    <string name="sales_order">Sales orders</string>
+    <string name="notification">Notification</string>
+    <string name="profile">Profile</string>
+    <string name="neww">new</string>
+    <string name="customers">Customers</string>
+    <string name="suppliers">Suppliers</string>
+    <string name="search_for_order">Search for order</string>
+    <string name="sales_orders">Sales orders</string>
+    <string name="macbeth_ltd">Macbeth Ltd.</string>
+    <string name="so_123456_ship_cargo_container_type_b026">SO-123456 - Ship cargo container type B026</string>
+    <string name="ready_for_shipment">Ready for shipment</string>
+    <string name="order_creation">Order creation</string>
+    <string name="_23_12_2020">23/12/2020,</string>
+    <string name="gino_lardon">Gino Lardon</string>
+    <string name="last_change">Last change</string>
+    <string name="order_lines">Order lines</string>
+    <string name="_3">(3)</string>
+    <string name="_0">(0)</string>
+    <string name="documents">Documents Checklist</string>
+    <string name="_2">(2)</string>
+    <string name="add_document">add document</string>
+    <string name="terms_amp_conditions"><![CDATA[Terms & conditions]]></string>
+    <string name="deliveries">Deliveries</string>
+    <string name="invoices">Invoices</string>
+    <string name="_25_000_00">€25.000,00</string>
+    <string name="edit">Edit</string>
+    <string name="get_link">Get link</string>
+    <string name="preview">Preview</string>
+    <string name="download">Download</string>
+    <string name="you_need_authorisation_to_delete_this_document_request_authorisation">You need authorisation to delete this document, request authorisation.</string>
+    <string name="this_document_cannot_be_deleted">This document cannot be deleted</string>
+    <string name="request_authorisation">Request authorisation</string>
+    <string name="back">Back</string>
+    <string name="edit_document">Edit Document</string>
+    <string name="create_new_customer">Create new customer</string>
+    <string name="status">Status</string>
+    <string name="mandatory_sign">*</string>
+    <string name="type">Type</string>
+    <string name="short_description">Short Description</string>
+    <string name="supplier">Supplier</string>
+    <string name="OT">OT</string>
+    <string name="save_document">Save document</string>
+    <string name="edit_sales_order">Edit Sales Order</string>
+    <string name="customer_name">Customer name</string>
+    <string name="save_order">Save Order</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="sales">Sales</string>
+    <string name="products">Products</string>
+    <string name="add_document_">Add Document</string>
+
+    <string-array name="typeItems">
+        <item>Document</item>
+        <item>Invoices</item>
+    </string-array>
+
+    <string-array name="statusItems">
+        <item>Pending</item>
+        <item>Approved</item>
+        <item>Rejected</item>
+    </string-array>
+</resources>

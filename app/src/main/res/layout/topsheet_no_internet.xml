@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_no_internet"
+    android:paddingHorizontal="@dimen/_15sdp"
+    android:paddingBottom="@dimen/_15sdp"
+    android:paddingTop="@dimen/_35sdp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:padding="@dimen/_2sdp"
+        app:srcCompat="@drawable/ic_no_internet"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/orderCreationTV"
+        style="@style/Font12Regular"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:text="App in offline mode"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:padding="@dimen/_2sdp"
+        app:srcCompat="@drawable/ic_info"/>
+
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.company.mysapcpsdkprojectoffline">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".app.SAPWizardApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/application_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="label,allowBackup">
+        <activity android:name=".mdui.EditSalesOrderActivity"></activity>
+        <activity
+            android:name=".app.WelcomeActivity"
+            android:theme="@style/splashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.MainBusinessActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".mdui.EntitySetListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".mdui.asalesorder.ASalesOrderActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/application_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".mdui.EntitySetListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mdui.EntitySetListActivity" />
+        </activity>
+        <activity
+            android:name=".mdui.asalesorderheaderpartner.ASalesOrderHeaderPartnerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/application_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".mdui.EntitySetListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mdui.EntitySetListActivity" />
+        </activity>
+        <activity
+            android:name=".mdui.asalesorderheaderprelement.ASalesOrderHeaderPrElementActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/application_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".mdui.EntitySetListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mdui.EntitySetListActivity" />
+        </activity>
+        <activity
+            android:name=".mdui.asalesorderitem.ASalesOrderItemActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/application_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".mdui.EntitySetListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mdui.EntitySetListActivity" />
+        </activity>
+        <activity
+            android:name=".mdui.asalesorderitempartner.ASalesOrderItemPartnerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/application_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".mdui.EntitySetListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mdui.EntitySetListActivity" />
+        </activity>
+        <activity
+            android:name=".mdui.asalesorderitemprelement.ASalesOrderItemPrElementActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/application_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".mdui.EntitySetListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mdui.EntitySetListActivity" />
+        </activity>
+        <activity
+            android:name=".mdui.asalesorderitemtext.ASalesOrderItemTextActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/application_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".mdui.EntitySetListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mdui.EntitySetListActivity" />
+        </activity>
+        <activity
+            android:name=".mdui.asalesorderscheduleline.ASalesOrderScheduleLineActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/application_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".mdui.EntitySetListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mdui.EntitySetListActivity" />
+        </activity>
+        <activity
+            android:name=".mdui.asalesordertext.ASalesOrderTextActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/application_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".mdui.EntitySetListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mdui.EntitySetListActivity" />
+        </activity>
+        <activity
+            android:name=".mdui.aslsordpaymentplanitemdetails.ASlsOrdPaymentPlanItemDetailsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/application_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".mdui.EntitySetListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".mdui.EntitySetListActivity" />
+        </activity>
+        <activity
+            android:name=".mdui.SettingsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/settings_activity_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".mdui.EntitySetListActivity"
+            android:screenOrientation="sensor"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.sap.cloud.mobile.foundation.authentication.OtpResponseActivity"
+            tools:node="replace">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="dimosv.salesandmarketing.xcallbackurl" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".util.AlarmReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".mdui.MainActivity" />
+        <activity android:name=".mdui.SalesOrderDetailActivity" />
+        <activity android:name=".mdui.SupplierDetailActivity" />
+        <activity android:name=".mdui.EditDocumentsActivity" />
+    </application>
+
+</manifest>

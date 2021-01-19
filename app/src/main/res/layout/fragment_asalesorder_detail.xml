@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".mdui.asalesorder.ASalesOrderActivity">
+    <data>
+        <import type = "com.sap.cloud.android.odata.api_sales_order_srv_entities.ASalesOrderType" />
+        <variable name="aSalesOrderType" type="ASalesOrderType"/>
+        <variable name="handler" type="com.company.mysapcpsdkprojectoffline.mdui.asalesorder.ASalesOrderDetailFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/item_detail_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="SalesOrder"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.salesOrder).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="SalesOrderType"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.salesOrderType).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="SalesOrganization"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.salesOrganization).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="DistributionChannel"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.distributionChannel).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="OrganizationDivision"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.organizationDivision).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="SalesGroup"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.salesGroup).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="SalesOffice"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.salesOffice).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="SalesDistrict"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.salesDistrict).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="SoldToParty"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.soldToParty).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="CreationDate"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.creationDate).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="CreatedByUser"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.createdByUser).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="LastChangeDate"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.lastChangeDate).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="LastChangeDateTime"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.lastChangeDateTime).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="PurchaseOrderByCustomer"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.purchaseOrderByCustomer).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="CustomerPurchaseOrderType"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.customerPurchaseOrderType).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="CustomerPurchaseOrderDate"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.customerPurchaseOrderDate).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="SalesOrderDate"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.salesOrderDate).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="TotalNetAmount"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.totalNetAmount).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="TransactionCurrency"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.transactionCurrency).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="SdDocumentReason"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.sdDocumentReason).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="PricingDate"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.pricingDate).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="RequestedDeliveryDate"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.requestedDeliveryDate).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="ShippingCondition"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.shippingCondition).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="CompleteDeliveryIsDefined"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.completeDeliveryIsDefined).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="ShippingType"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.shippingType).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="HeaderBillingBlockReason"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.headerBillingBlockReason).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="DeliveryBlockReason"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.deliveryBlockReason).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="IncotermsClassification"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.incotermsClassification).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="IncotermsTransferLocation"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.incotermsTransferLocation).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="IncotermsLocation1"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.incotermsLocation1).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="IncotermsLocation2"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.incotermsLocation2).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="IncotermsVersion"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.incotermsVersion).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="CustomerPaymentTerms"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.customerPaymentTerms).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="PaymentMethod"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.paymentMethod).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="AssignmentReference"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.assignmentReference).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="ReferenceSDDocument"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.referenceSDDocument).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="ReferenceSDDocumentCategory"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.referenceSDDocumentCategory).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="CustomerTaxClassification1"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.customerTaxClassification1).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="TaxDepartureCountry"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.taxDepartureCountry).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="VatRegistrationCountry"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.vatRegistrationCountry).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="SalesOrderApprovalReason"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.salesOrderApprovalReason).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="SalesDocApprovalStatus"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.salesDocApprovalStatus).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="OverallSDProcessStatus"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.overallSDProcessStatus).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="TotalCreditCheckStatus"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.totalCreditCheckStatus).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="OverallTotalDeliveryStatus"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.overallTotalDeliveryStatus).toString()}" />
+
+                    <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:keyText="OverallSDDocumentRejectionSts"
+                        app:valueText="@{aSalesOrderType.getOptionalValue(ASalesOrderType.overallSDDocumentRejectionSts).toString()}" />
+
+                    <RelativeLayout
+                        style="@style/FioriButton.Flat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:onClick="@{handler::onNavigationClickedToASalesOrderItem_to_Item}"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/link_label_to_to_item"
+                            style="@style/FioriButton.Flat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:paddingLeft="16dp"
+                            android:text="ASalesOrderItem" />
+
+                        <Button
+                            android:id="@+id/link_button_to_to_item"
+                            style="@style/FioriButton.Flat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:clickable="false"
+                            android:drawableStart="@drawable/ic_arrow_forward_black_24dp"
+                            android:enabled="true"
+                            android:visibility="invisible"
+                            android:focusable="false" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/FioriButton.Flat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:onClick="@{handler::onNavigationClickedToASalesOrderHeaderPartner_to_Partner}"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/link_label_to_to_partner"
+                            style="@style/FioriButton.Flat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:paddingLeft="16dp"
+                            android:text="ASalesOrderHeaderPartner" />
+
+                        <Button
+                            android:id="@+id/link_button_to_to_partner"
+                            style="@style/FioriButton.Flat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:clickable="false"
+                            android:drawableStart="@drawable/ic_arrow_forward_black_24dp"
+                            android:enabled="true"
+                            android:visibility="invisible"
+                            android:focusable="false" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/FioriButton.Flat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:onClick="@{handler::onNavigationClickedToASlsOrdPaymentPlanItemDetails_to_PaymentPlanItemDetails}"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/link_label_to_to_paymentplanitemdetails"
+                            style="@style/FioriButton.Flat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:paddingLeft="16dp"
+                            android:text="ASlsOrdPaymentPlanItemDetails" />
+
+                        <Button
+                            android:id="@+id/link_button_to_to_paymentplanitemdetails"
+                            style="@style/FioriButton.Flat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:clickable="false"
+                            android:drawableStart="@drawable/ic_arrow_forward_black_24dp"
+                            android:enabled="true"
+                            android:visibility="invisible"
+                            android:focusable="false" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/FioriButton.Flat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:onClick="@{handler::onNavigationClickedToASalesOrderHeaderPrElement_to_PricingElement}"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/link_label_to_to_pricingelement"
+                            style="@style/FioriButton.Flat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:paddingLeft="16dp"
+                            android:text="ASalesOrderHeaderPrElement" />
+
+                        <Button
+                            android:id="@+id/link_button_to_to_pricingelement"
+                            style="@style/FioriButton.Flat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:clickable="false"
+                            android:drawableStart="@drawable/ic_arrow_forward_black_24dp"
+                            android:enabled="true"
+                            android:visibility="invisible"
+                            android:focusable="false" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/FioriButton.Flat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:onClick="@{handler::onNavigationClickedToASalesOrderText_to_Text}"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/link_label_to_to_text"
+                            style="@style/FioriButton.Flat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:paddingLeft="16dp"
+                            android:text="ASalesOrderText" />
+
+                        <Button
+                            android:id="@+id/link_button_to_to_text"
+                            style="@style/FioriButton.Flat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:clickable="false"
+                            android:drawableStart="@drawable/ic_arrow_forward_black_24dp"
+                            android:enabled="true"
+                            android:visibility="invisible"
+                            android:focusable="false" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+</layout>

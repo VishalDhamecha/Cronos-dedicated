@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+    <!-- XTIT: The title of the create Activity, will appear at the top of the screen -->
+    <string name="title_create_fragment">"צור פריט %1$s"</string>
+
+    <!-- XTIT: The title of the update Activity, will appear at the top of the screen -->
+    <string name="title_update_fragment">"עדכן"</string>
+
+    <!-- XMSG: Error message for the mandatory input fields, will appear in the edit field left empty -->
+    <string name="mandatory_warning">"זהו שדה חובה"</string>
+
+    <!-- XTIT: The title of the welcome screen, will appear at the top of the screen -->
+    <string name="welcome_screen_headline_label">"ברוך הבא"</string>
+
+    <!-- YINS: Short description on the welcome screen -->
+    <string name="welcome_screen_detail_label">"חקור את ערכת פיתוח התוכנה של SAP Cloud Platform עבור Android באמצעות יישום זה שנוצר"</string>
+
+    <!-- XFLD: label at the bottom of the welcome screen -->
+    <string name="welcome_screen_footnote_label">"באפשרותך לנסות את התכונות של ערכת פיתוח התוכנה במצב הדגמה."</string>
+
+    <!-- XFLD: label of the primary button on the welcome screen -->
+    <string name="welcome_screen_primary_button_label">"התחל"</string>
+
+    <!-- XBUT: Text of the Save button -->
+    <string name="save">"שמור"</string>
+
+    <!-- XBUT: Text of the Update button -->
+    <string name="update">"עדכן"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="delete">"מחק"</string>
+
+    <!-- XBUT: Text of the Cancel button -->
+    <string name="cancel">"בטל"</string>
+
+    <!-- XBUT: Text of the OK button -->
+    <string name="ok">"OK"</string>
+
+    <!-- XBUT: Text of the Delete button -->
+    <string name="yes">"כן"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_dialog_title">"מחק"</string>
+
+    <!-- XMSG: The message of the delete dialog -->
+    <string name="delete_one_item">"האם אתה בטוח שברצונך למחוק את הפריט שנבחר?"</string>
+
+    <!-- XMSG: The message of the delete dialog in case of multiple selection -->
+    <string name="delete_more_items">"האם אתה בטוח שברצונך למחוק את הפריטים שנבחרו?"</string>
+
+    <!-- XMSG: Error message, can be presented in a Toast or Dialog -->
+    <string name="entity_download_error">"אירעה שגיאה במהלך פעולה ברקע."</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_refresh">"רענן"</string>
+
+    <!-- XMIT: Refresh menu item -->
+    <string name="menu_home">"דף הבית"</string>
+
+    <!-- XMIT: Update menu item -->
+    <string name="menu_update">"עדכן"</string>
+
+    <!-- XMIT: Delete menu item -->
+    <string name="menu_delete">"מחק"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_headline">"Headline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_subheadline">"Subheadline"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_body">"Body text"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_footnote">"Footnote"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag1">"TAG1"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag2">"TAG2"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_tag3">"TAG3"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_description">"Item description"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="object_header_status">"Status"</string>
+
+    <!-- NOTR: No translation needed, just placeholder text -->
+    <string name="error">"Error"</string>
+
+    <!-- error messages -->
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="read_failed">"ההורדה נכשלה"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="format_error">"קלט אינו מתאים לסוג הנתונים"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="read_failed_detail">"פעולת הורדה נכשלה. נסה לאתחל את היישום."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="create_failed">"יצירה נכשלה"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="create_failed_detail">"פעולת יצירה נכשלה. נסה לבצע אותה שוב מאוחר יותר."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="update_failed">"עדכון נכשל"</string>
+    <string name="update_failed_detail">"פעולת עדכון נכשלה. רענן את הנתונים המקומיים ונסה לבצע אותה שוב מאוחר יותר."</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="delete_failed">"מחיקה נכשלה"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="delete_failed_detail">"פעולת מחיקה נכשלה. רענן את הנתונים המקומיים ונסה לבצע אותה שוב מאוחר יותר."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="log_upload_ok">"יומן הועלה לשרת."</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="log_upload_failed">"העלאת יומן נכשלה"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="log_upload_failed_detail">"התקבלה כתובת URL פגומה עבור העלאת יומן. ייתכן שהיישום יעבוד, אך יומנים לא יועלו לשרת."</string>
+
+    <!-- XTIT: The message of the upload toast in case of success -->
+    <string name="usage_upload_ok">"שימוש הועלה לשרת"</string>
+
+    <!-- XTIT: The message of the upload toast in case of failing -->
+    <string name="usage_upload_failed">"העלאת שימוש נכשלה"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="usage_init_failed">"לא ניתן היה לאתחל שימוש"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_error">"שגיאת דחיפה"</string>
+
+    <!-- XTIT: The title of the delete dialog -->
+    <string name="push_message">"הודעת דחיפה התקבלה"</string>
+
+    <!-- XTIT: The Notification Text -->
+    <string name="push_text">"הודעה"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_token_upload_failed_detail">"לא ניתן היה להעלות token דחיפה לשרת של SAP, תכונת הדחיפה לא תעבוד. לא תקבל הודעות דחיפה."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="push_invalid_push_format">"הודעת דחיפה התקבלה, אך הפורמט שלה לא תקין ולכן לא ניתן היה לעבד אותה."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Title -->
+    <string name="before_navigation_dialog_title">"אובדן נתונים פוטנציאלי"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Message -->
+    <string name="before_navigation_dialog_message">"יצאה מהעמוד הזה תגרום לכך שהנתונים לא יישמרו."</string>
+
+    <!-- XMSG: AlertDialog before navigation - Positive button (navigation occurs) -->
+    <string name="before_navigation_dialog_positive_button">"צא"</string>
+
+    <!-- XMSG: AlertDialog before navigation - Negative button (cancelled navigation) -->
+    <string name="before_navigation_dialog_negative_button">"הישאר"</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="policy_download_failed">"הורדת מדיניות נכשלה"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="policy_download_failed_details">"הורדת מדיניות סביבה מהשרת נכשלה, ייעשה שימוש במדיניות בברירת מחדל."</string>
+
+    <!-- XTIT: The title of an error dialog -->
+    <string name="configuration_invalid">"תצורה לא חוקית"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="configuration_contained_malformed_url">"תצורת מכילה כתובת URL פגומה: %s"</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="secure_store_error">"שגיאת אחסון מאובטח"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="secure_store_open_default_error_detail">"לא ניתן היה לפתוח אחסון מאובטח עם קוד סיסמה בברירת מחדל."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="passcode_change_error">"שגיאת שינוי של קוד סיסמה"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="passcode_change_error_detail">"לא ניתן היה לשנות קוד סיסמה של אחסון מאובטח. יישום עדיין עובד עם קוד הסיסמה האחרון."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="passcode_change_error_detail_default">"לא ניתן היה לקבוע קוד סיסמה בברירת מחדל. יישום עדיין עובד עם קוד הסיסמה האחרון של משתמש."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="config_data_error_title">"קבלת נתוני תצורה מאחסון קבוע נכשלה"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_bad_field_description">"שליפת שדה הנתונים שבוקש נכשלה."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_bad_service_url_description">"הערך עבור כתובת ה-URL של שירות, \'%s\' ,אינו כתובת URL חוקית."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_build_json_description">"בניית אובייקט JSON נכשלה."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_no_data_description">"נתוני תצורה לא נמצאים באחסון הקבוע."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_reflection_exception">"השתמש ב-getInstance ולא ב-reflection כדי ליצור מופע של סיווג זה."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="config_loader_complete_error_title">"טעינת נתוני תצורה נכשלה"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_complete_error_description">"קבלת נתוני תצורה על-ידי טוען תצורה נכשלה."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="config_loader_on_error_title">"שגיאת ספק תצורה"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_loader_on_error_description">"ספק תצורה, \'%1$s\', נתקל בשגיאה. %2$s"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="config_data_corrupted_description">"הנתונים שנשמרו בעבר פגומים ולא ניתן לטעון אותם."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="server_auth_not_supported_saml">"שגיאה: יישום זה לא תומך באימות SAML."</string>
+
+	<!-- XTIT: The title of the error dialog -->
+	<string name="bind_error">"שגיאת איגוד"</string>
+	
+	<!-- XMSG: Detailed error description -->
+    <string name="bind_error_detail">"איגוד לשירות סנכרון OData לא מקוון נכשל."</string>
+    
+	<!-- XTIT: The title of the error dialog -->
+	<string name="offline_provider_error">"שגיאת אתחול לא מקוון"</string>
+	
+ 	<!-- XMSG: Detailed error description -->   
+	<string name="offline_provider_error_detail">"אתחול ספק OData לא מקוון נכשל."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_initial_open_error">"שגיאת פתיחה התחלתית לא מקוונת"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_initial_open_error_detail">"השלמת פתיחה התחלתית של אחסון לא מקוון נכשלה."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_big_data_error_detail">"תוכן המנה מה-Back-End היה גדול מדי, הגודל בברירת מחדל של תוכן מנה של CPms מוגבל ל-64 מגה. תוכל לנסות לפתור זאת באחת מהדרכים הבאות:\n\t1) הגדל את הגבלת הגודל באופן לא מקוון.ini;\n\t2) ישם עימוד בצד השרת כדי לאפשר סנכרון של סטי נתונים גדולים בגושים;\n\t3) השתמש בבקשות $top במסננים או שאילתות מגדירות כדי להגביל את כמות הנתונים הכוללת שהסביבה מורידה."</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_backend_time_out_error_detail">"הגדל את הזמן הקצוב לחיבור ל-Back-End עבור יישום זה ב-CPms ונסה שוב."</string>
+
+    <!-- XTIT: The title of the error dialog -->
+	<string name="synchronize_failure">"כישלון סנכרון"</string>
+	
+	<!-- XMSG: Detailed error description -->    
+	<string name="synchronize_failure_detail">"סנכרון עם שירותים לנייד נכשל"</string>
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="offline_reset_store_error">"כישלון איפוס של אחסון לא מקוון"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="offline_reset_store_error_detail">"איפוס/הסרה של אחסון נתונים לא מקוון נכשל"</string>
+    <!-- error messages -->
+
+    <!-- offline -->	
+	
+	<!-- XMSG: Advise user of delay when performing initial opening of offline store -->
+	<string name="initializing_offline_store">"מאתחל אחסון לא מקוון. המתן."</string>
+	
+    <!-- NOTR: No translation needed, Label for entity state in offline -->	
+	<string name="local_state">"Local"</string>
+	
+    <!-- NOTR: No translation needed, Label for entity state in offline -->	
+	<string name="error_state">"Error"</string>
+    
+	<!-- NOTR: No translation needed, Label for entity state in offline -->	
+	<string name="updated_state">"Updated"</string>
+    
+	<!-- NOTR: No translation needed, Label for entity state in offline -->	
+	<string name="download_state">"Download"</string>
+    
+    <!-- XMIT: Menu item to trigger synchronization -->
+	<string name="synchronize_action">"סנכרן"</string>
+	
+    <!-- offline -->
+	
+    <!-- XTIT: The title of the settings dialog -->
+    <string name="settings_activity_name">"הגדרות"</string>
+    <!-- XTIT: The title of the settings menu -->
+    <string name="menu_item_settings">"הגדרות"</string>
+
+    <!-- XTIT: The title of the passcode group -->
+    <string name="passcode">"קוד סיסמה"</string>
+    <!-- XTIT: The title of the change passcode menu item -->
+    <string name="manage_passcode">"שנה קוד סיסמה"</string>
+    <!-- XTIT: The title of the reset group -->
+    <string name="reset">"אפס יישום"</string>
+    <!-- XTIT: The title of the reset app menu item -->
+    <string name="reset_app">"נקה הגדרות יישום"</string>
+    <!-- XTIT: The title of a confirmation dialog -->
+    <string name="reset_app_confirmation">"כל המידע שמשויך ליישום זה יוסר. האם ברצונך להמשיך?"</string>
+    <!-- XTIT: The title of an error dialog -->
+    <string name="invalid_passcode">"קוד סיסמה לא חוקי"</string>
+    <!-- XTIT: The title of an error dialog -->
+    <string name="passcode_error">"שגיאת קוד סיסמה"</string>
+    <!-- XTIT: The title of an error dialog -->
+    <string name="failed_to_change_passcode">"שינוי קוד סיסמה נכשל"</string>
+    <!-- XTIT: The title of an error dialog -->
+    <string name="successful_passcode_change">"קוד הסיסמה שונה בהצלחה"</string>
+    <!-- XMSG: Detailed error description -->
+    <string name="disabled_passcode">"קוד סיסמה בברירת מחדל לא יכול היה לבטל נעילת אחסון מאובטח כאשר קוד הסיסמה מושבת."</string>
+    <!-- XMSG: Detailed error description -->
+    <string name="invalid_passcode_detail">"לא ניתן היה להשתמש בקוד סיסמה שסופק כדי ליצור את האחסון המאובטח."</string>
+    <!-- XTIT: The title of an alert dialog for when the current passcode doesn't satisfy the new passcode policy, or the passcode has expired -->
+    <string name="new_passcode_required">"דרוש קוד סיסמה חדש"</string>
+    <!-- XMSG: The message of an alert dialog for when the current passcode doesn't satisfy the new passcode policy, or the passcode has expired -->
+    <string name="new_passcode_required_detail">"פג התוקף של קוד הסיסמה או שמדיניות קוד הסיסמה שונתה. עליך לקבוע קוד סיסמה חדש."</string>
+    <!-- XTIT: The title of an alert dialog for when no passcode is set but the new policy requires one -->
+    <string name="passcode_required">"דרוש קוד סיסמה"</string>
+    <!-- XMSG: The message of an alert dialog for when no passcode is set but the new policy requires one -->
+    <string name="passcode_required_detail">"מדיניות קוד הסיסמה שונתה. עליך לקבוע קוד סיסמה."</string>
+    <!-- XTIT: The title of a dialog informing the user the passcode policy has changed and they need to take action -->
+    <string name="policy_changed">"מדיניות שונתה"</string>
+    <!-- XMSG: The message of a dialog informing the user they can no longer use fingerprint to unlock the app because the new passcode policy doesn't allow it -->
+    <string name="fingerprint_no_longer_allowed">"שימוש בטביעת אצבע כדי לבטל את נעילת היישום הזה הושבת בהתאם למדיניות החדשה. מעתה והלאה עליך להזין קוד סיסמה במקום."</string>
+    <!-- XTIT: The title of a dialog -->
+    <string name="max_retries_title">"ניסיונות רבים מדי"</string>
+    <!-- XMSG: The message of a dialog -->
+    <string name="max_retries_message">"בוצע המספר המקסימלי של ניסיונות חוזרים, היישום יאופס כעת."</string>
+    <!-- XMSG: The message of reset client -->
+    <string name="reset_client">"אפס סביבה"</string>
+
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_usage">"העלה נתוני שימוש"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="set_usage_consent">"הסכם לאיסוף שימוש"</string>
+
+    <!-- XTIT: The title of a menu group -->
+    <string name="usage">"שימוש"</string>
+    <!-- XTIT: The title of a menu group -->
+    <string name="logging">"רישום ביומן"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="upload_log">"העלה יומן"</string>
+    <!-- XTIT: The description of a menu item -->
+    <string name="upload_log_summary">"העלה יומן לשרת."</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_changed">"רמת יומן בברירת מחדל שונתה ממדיניות השרת ל: %s"</string>
+    <!-- XMSG: The message of a log level toast -->
+    <string name="log_level_default">"מדיניות יומן לא נקבעה בשרת, רמת יומן בברירת מחדל נקבעה ל: %s"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="log_level">"רמת יומן"</string>
+    <!-- XTIT: The title of a menu item -->
+    <string name="dialog_title_choose_log_level">"בחר רמת יומן"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_none">"ללא"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_fatal">"חמורה"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_error">"שגיאה"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_warning">"הזהר"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_info">"מידע"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_debug">"בצע ניפוי שגיאות"</string>
+    <!-- XTIT: Log level title -->
+    <string name="log_level_path">"נתיב"</string>
+    <!-- XMSG: Authentication error message -->
+    <string name="authentication_failed">"אימות נכשל"</string>
+
+    <!-- restrictions -->
+
+    <!-- XTIT: The title of the error dialog -->
+    <string name="restriction_service_url_title">"כתובת URL של שירות"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="restriction_service_url_description">"כתובת ה-URL של שירות ה-OData."</string>
+    <!-- restrictions -->
+
+    <!-- XBUT: Text of the Skip button on the Create Passcode Screen -->
+    <string name="skip_passcode">"דלג"</string>
+
+    <!-- XMSG: Detailed Usage data collection description -->
+    <string name="get_usage_permission_explanation">"טקסט מפורט על האופן בו פרטיות נתונים קשורה ליישום זה ומדוע חשוב למשתמש להפעיל פונקציונאליות זאת"</string>
+    <!-- XTIT: The title of usage consent screen -->
+    <string name="get_usage_permission_title">"איסוף נתונים של כלי ניתוח"</string>
+    <!-- XBUT: Text of a button -->
+    <string name="usage_permission_allow">"OK"</string>
+    <!-- XBUT: Text of a button -->
+    <string name="usage_permission_deny">"לא כעת"</string>
+    <!-- XTIT: The header of usage consent screen -->
+    <string name="get_usage_permission_activity_name">"איסוף נתוני שימוש ביישום"</string>
+
+    <!-- XBUT: Text of the Skip button on the Fingerprint Screen -->
+    <string name="skip_fingerprint">"דלג על טביעת אצבע"</string>
+    <!-- XBUT: button text giving the option to use a passcode (instead of a fingerprint) to unlock the app -->
+    <string name="use_passcode">"השתמש בקוד סיסמה"</string>
+
+    <!-- XMSG: Detailed error description -->
+    <string name="error_back_navigation">"היישום מוגן בקוד סיסמה, ולא ניתן להפעיל אותו בלי לספק את קוד הסיסמה הנכון."</string>
+
+</resources>

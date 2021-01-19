@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <import type="com.company.mysapcpsdkprojectoffline.databinding.simplepropertyformcell.Converter"/>
+        <import type="android.view.View"/>
+        <variable name="aSalesOrderScheduleLineType" type="com.sap.cloud.android.odata.api_sales_order_srv_entities.ASalesOrderScheduleLineType"/>
+    </data>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:clickable="true">
+        <ScrollView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/create_update_asalesorderschedulelinetype"
+                    android:orientation="vertical">
+
+                <com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/requesteddeliverydateid"
+                        android:tag="RequestedDeliveryDate"
+                        app:key="RequestedDeliveryDate"
+                        app:value="@={Converter.toString(requesteddeliverydateid, aSalesOrderScheduleLineType.requestedDeliveryDate, aSalesOrderScheduleLineType.requestedDeliveryDate)}">
+                </com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell>
+                <com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/confirmeddeliverydateid"
+                        android:tag="ConfirmedDeliveryDate"
+                        app:key="ConfirmedDeliveryDate"
+                        app:value="@={Converter.toString(confirmeddeliverydateid, aSalesOrderScheduleLineType.confirmedDeliveryDate, aSalesOrderScheduleLineType.confirmedDeliveryDate)}">
+                </com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell>
+                <com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/orderquantityunitid"
+                        android:tag="OrderQuantityUnit"
+                        android:maxLength="@{3}"
+                        app:key="OrderQuantityUnit"
+                        app:value="@={aSalesOrderScheduleLineType.orderQuantityUnit}">
+                </com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell>
+                <com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/schedulelineorderquantityid"
+                        android:tag="ScheduleLineOrderQuantity"
+                        app:key="ScheduleLineOrderQuantity"
+                        app:value="@={Converter.toString(schedulelineorderquantityid, aSalesOrderScheduleLineType.scheduleLineOrderQuantity, aSalesOrderScheduleLineType.scheduleLineOrderQuantity)}">
+                </com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell>
+                <com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/confdorderqtybymatlavailcheckid"
+                        android:tag="ConfdOrderQtyByMatlAvailCheck"
+                        app:key="ConfdOrderQtyByMatlAvailCheck"
+                        app:value="@={Converter.toString(confdorderqtybymatlavailcheckid, aSalesOrderScheduleLineType.confdOrderQtyByMatlAvailCheck, aSalesOrderScheduleLineType.confdOrderQtyByMatlAvailCheck)}">
+                </com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell>
+                <com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/deliveredqtyinorderqtyunitid"
+                        android:tag="DeliveredQtyInOrderQtyUnit"
+                        app:key="DeliveredQtyInOrderQtyUnit"
+                        app:value="@={Converter.toString(deliveredqtyinorderqtyunitid, aSalesOrderScheduleLineType.deliveredQtyInOrderQtyUnit, aSalesOrderScheduleLineType.deliveredQtyInOrderQtyUnit)}">
+                </com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell>
+                <com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/openconfddelivqtyinordqtyunitid"
+                        android:tag="OpenConfdDelivQtyInOrdQtyUnit"
+                        app:key="OpenConfdDelivQtyInOrdQtyUnit"
+                        app:value="@={Converter.toString(openconfddelivqtyinordqtyunitid, aSalesOrderScheduleLineType.openConfdDelivQtyInOrdQtyUnit, aSalesOrderScheduleLineType.openConfdDelivQtyInOrdQtyUnit)}">
+                </com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell>
+                <com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/correctedqtyinorderqtyunitid"
+                        android:tag="CorrectedQtyInOrderQtyUnit"
+                        app:key="CorrectedQtyInOrderQtyUnit"
+                        app:value="@={Converter.toString(correctedqtyinorderqtyunitid, aSalesOrderScheduleLineType.correctedQtyInOrderQtyUnit, aSalesOrderScheduleLineType.correctedQtyInOrderQtyUnit)}">
+                </com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell>
+                <com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/delivblockreasonforschedlineid"
+                        android:tag="DelivBlockReasonForSchedLine"
+                        android:maxLength="@{2}"
+                        app:key="DelivBlockReasonForSchedLine"
+                        app:value="@={aSalesOrderScheduleLineType.delivBlockReasonForSchedLine}">
+                </com.sap.cloud.mobile.fiori.formcell.SimplePropertyFormCell>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

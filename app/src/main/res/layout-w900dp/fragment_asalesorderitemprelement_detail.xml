@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".mdui.asalesorderitemprelement.ASalesOrderItemPrElementActivity">
+    <data>
+        <import type = "com.sap.cloud.android.odata.api_sales_order_srv_entities.ASalesOrderItemPrElementType" />
+        <variable name="aSalesOrderItemPrElementType" type="ASalesOrderItemPrElementType"/>
+        <variable name="handler" type="com.company.mysapcpsdkprojectoffline.mdui.asalesorderitemprelement.ASalesOrderItemPrElementDetailFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="SalesOrder"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.salesOrder).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="SalesOrderItem"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.salesOrderItem).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PricingProcedureStep"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.pricingProcedureStep).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PricingProcedureCounter"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.pricingProcedureCounter).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConditionType"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.conditionType).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PricingDateTime"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.pricingDateTime).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConditionCalculationType"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.conditionCalculationType).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConditionBaseValue"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.conditionBaseValue).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConditionRateValue"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.conditionRateValue).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConditionCurrency"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.conditionCurrency).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConditionQuantity"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.conditionQuantity).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConditionQuantityUnit"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.conditionQuantityUnit).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConditionCategory"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.conditionCategory).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConditionIsForStatistics"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.conditionIsForStatistics).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PricingScaleType"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.pricingScaleType).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="IsRelevantForAccrual"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.isRelevantForAccrual).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="CndnIsRelevantForInvoiceList"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.cndnIsRelevantForInvoiceList).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConditionOrigin"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.conditionOrigin).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="IsGroupCondition"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.isGroupCondition).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConditionRecord"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.conditionRecord).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConditionSequentialNumber"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.conditionSequentialNumber).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="TaxCode"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.taxCode).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="WithholdingTaxCode"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.withholdingTaxCode).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="CndnRoundingOffDiffAmount"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.cndnRoundingOffDiffAmount).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConditionAmount"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.conditionAmount).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="TransactionCurrency"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.transactionCurrency).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConditionControl"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.conditionControl).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConditionInactiveReason"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.conditionInactiveReason).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConditionClass"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.conditionClass).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PrcgProcedureCounterForHeader"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.prcgProcedureCounterForHeader).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="FactorForConditionBasisValue"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.factorForConditionBasisValue).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="StructureCondition"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.structureCondition).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PeriodFactorForCndnBasisValue"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.periodFactorForCndnBasisValue).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="PricingScaleBasis"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.pricingScaleBasis).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConditionScaleBasisValue"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.conditionScaleBasisValue).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConditionScaleBasisUnit"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.conditionScaleBasisUnit).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConditionScaleBasisCurrency"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.conditionScaleBasisCurrency).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="CndnIsRelevantForIntcoBilling"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.cndnIsRelevantForIntcoBilling).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConditionIsManuallyChanged"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.conditionIsManuallyChanged).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="ConditionIsForConfiguration"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.conditionIsForConfiguration).toString()}" />
+
+        <com.sap.cloud.mobile.fiori.misc.KeyValueCell
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:keyText="VariantCondition"
+            app:valueText="@{aSalesOrderItemPrElementType.getOptionalValue(ASalesOrderItemPrElementType.variantCondition).toString()}" />
+
+        <RelativeLayout
+            style="@style/FioriButton.Flat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:onClick="@{handler::onNavigationClickedToASalesOrder_to_SalesOrder}"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/link_label_to_to_salesorder"
+                style="@style/FioriButton.Flat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:focusable="false"
+                android:paddingLeft="16dp"
+                android:text="ASalesOrder" />
+
+            <Button
+                android:id="@+id/link_button_to_to_salesorder"
+                style="@style/FioriButton.Flat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:drawableStart="@drawable/ic_arrow_forward_black_24dp"
+                android:enabled="true"
+                android:visibility="invisible"
+                android:focusable="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/FioriButton.Flat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:onClick="@{handler::onNavigationClickedToASalesOrderItem_to_SalesOrderItem}"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/link_label_to_to_salesorderitem"
+                style="@style/FioriButton.Flat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:focusable="false"
+                android:paddingLeft="16dp"
+                android:text="ASalesOrderItem" />
+
+            <Button
+                android:id="@+id/link_button_to_to_salesorderitem"
+                style="@style/FioriButton.Flat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:drawableStart="@drawable/ic_arrow_forward_black_24dp"
+                android:enabled="true"
+                android:visibility="invisible"
+                android:focusable="false" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>
